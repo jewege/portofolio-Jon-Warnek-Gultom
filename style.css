@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+:target {
+      scroll-margin-top: 150px;
+}
+
+body {
+      background-color: #12151F;
+      font-family: 'Montserrat', sans-serif;
+      color: #F7F7F7;
+}
+
+.logo {
+      color: #3FD2C7;
+      font-size: 20px;
+}
+
+.logo:hover {
+      transform: rotate(360deg);
+      cursor: pointer;
+      transition: .5s ease-in-out;
+}
+
+header {
+      margin-bottom: 20vh;
+}
+
+
+nav {
+      background-color: #12151F;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      border-bottom: 1px;
+      box-shadow: 0 0 3px #000;
+}
+
+.hamburger {
+      display: none;
+      cursor: pointer;
+}
+
+.bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all .6s ease-in-out;
+      background-color: #E1F2F7;
+}
+
+.nav-menu li {
+      padding: 10px;
+      display: inline-block;
+}
+
+.logo {
+      font-weight: 600;
+      font-size: 20px;
+      margin-left: 15%;
+      cursor: pointer;
+}
+
+.logo:hover {
+      transform: rotate(2deg);
+      color: rgb(71, 207, 231);
+      transition: .3s ease;
+}
+
+.nav-menu li a {
+      font-weight: 500;
+      color: #f4f4f4;
+      text-decoration: none;
+}
+
+.nav-menu li a:hover {
+      color: rgb(71, 207, 231);
+      transition: all .2s ease;
+}
+
+.btn-contact {
+      border: none;
+      color: #000;
+      background: #3FD2C7;
+      padding: 7px;
+      margin-right: 15%;
+}
+
+.btn-contact:hover {
+      background-color: rgb(71, 207, 231);
+      color: #000;
+      transition: all .2s ease;
+}
+
+.content {
+      width: 70%;
+      display: flex;
+      margin: 0 auto;
+      gap: 100px;
+      align-items: center;
+}
+
+.foto {
+      width: 50%;
+}
+
+.foto img {
+      width: 100%;
+}
+
+.intro {
+      width: 50%;
+}
+
+.intro .hello {
+      color: #f4f4f4;
+      font-weight: 200;
+}
+
+.intro h3 {
+      font-weight: 400;
+}
+
+.intro h1 {
+      margin-bottom: 10px;
+      color: #3FD2C7;
+}
+
+.intro p {
+      font-weight: 200;
+      text-align: left;
+      margin-bottom: 10px;
+      line-height: 25px;
+}
+
+.teknologi {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 20px;
+      transition: 0.4s ease-in-out;
+}
+
+.teknologi img {
+      width: 70%;
+}
+
+.teknologi:hover {
+      transform: scale(.999);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnResume {
+      display: flex;
+      justify-content: center;
+}
+
+.btnResume button {
+      background-color: #3FD2C7;
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 4px;
+      border: none;
+}
+
+button:hover {
+      background: #E1F2F7;
+      cursor: pointer;
+      transition: .2s ease-in;
+}
+
+.wrapper {
+      margin-top: -20px;
+      width: 100%;
+      background-color: #000;
+}
+
+
+.about {
+      padding: 30px 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+      width: 70%;
+      margin-top: -5px;
+      background-color: #000;
+}
+
+.fotoAbt {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+}
+
+.fotoAbt img {
+      width: 50%;
+}
+
+.fotoAbt img:hover {
+      transform: rotate(-5deg);
+}
+
+.abtDesc {
+      width: 50%;
+}
+
+.abtDesc h1 {
+      margin-bottom: 20px;
+}
+
+.abtDesc ul li {
+      margin: 10px;
+}
+
+.myProject {
+      align-items: center;
+      width: 70%;
+      margin: auto;
+      margin-top: 50px;
+}
+
+.myProject h1 {
+      margin: 30px;
+      text-align: center;
+}
+
+.project-row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 45px;
+}
+
+.card img {
+      width: 100%;
+}
+
+.card {
+      position: relative;
+      width: 20%;
+      height: 180px;
+      box-shadow: 0 4px 8px 0 #000;
+}
+
+.card img {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: .5s ease;
+      backface-visibility: hidden;
+}
+
+.middle {
+      width: 100%;
+      text-align: center;
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+      -ms-transform: translate(-50%, -90%)
+}
+
+.btnProject {
+      margin-top: 5px;
+      padding: 4px 5px;
+      border: none;
+      border-radius: 2px;
+      background: #f4f4f4;
+}
+
+.btnProject:hover {
+      background-color: #3FD2C7;
+}
+
+.card:hover img {
+      opacity: 0.3;
+      cursor: pointer;
+}
+
+.card:hover .middle {
+      opacity: 1;
+}
+
+footer {
+      margin-top: -20px;
+      padding: 20px;
+      background: #000;
+      width: 100%;
+}
+
+footer h1, p {
+      text-align: center;
+      margin: 10px;
+}
+
+.sosmed {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+}
+
+.sosmed i {
+      font-size: 30px;
+}
+
+.sosmed i:hover {
+      cursor: pointer;
+      color: #3FD2C7;
+      transform: scale(1.2);
+      transition: .2s ease-in-out;
+}
+
+.bottom {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+}
+
+
+@media screen and (max-width:776px) {
+
+      header {
+            margin-bottom: 10vh;
+      }
+
+      nav {
+            width: 100%;
+            justify-content: space-between;
+      }
+
+      .btn-contact {
+            display: none;
+      }
+
+      .logo {
+            margin-left: 5px;
+      }
+
+      .hamburger {
+            display: block;
+            margin-right: 10px;
+      }
+
+      .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+      }
+
+      .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(765deg);
+      }
+
+      .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-764deg);
+      }
+
+      .nav-menu {
+            position: fixed;
+            width: 100%;
+            height: 50vh;
+            background: #12151F;
+            top: 79px;
+            flex-direction: column;
+            left: -100%;
+            text-align: center;
+            transition: 0.5s;
+            z-index: 1;
+      }
+
+      .nav-menu li {
+            line-height: 50px;
+            display: block;
+      }
+
+      .nav-menu.active {
+            left: 0;
+      }
+
+      .nav-menu li a {
+            color: #f4f4f4;
+      }
+
+      .header-bg {
+            width: 100%;
+      }
+
+      .content {
+            width: 100%;
+            flex-direction: column;
+      }
+
+      .foto {
+            margin-top: 35px;
+            display: flex;
+            width: 90%;
+            justify-content: center;
+      }
+
+      .foto img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+      }
+
+      .intro {
+            margin-top: -80px;
+            text-align: center;
+            width: 100%;
+      }
+
+      .intro p {
+            text-align: justify;
+      }
+
+      .teknologi {
+            width: 100%;
+      }
+
+      .teknologi img {
+            width: 70%;
+      }
+
+      .about {
+            width: 100%;
+      }
+
+      .abtDesc {
+            width: 60%;
+      }
+
+      .fotoAbt {
+            width: 40%;
+      }
+
+      .fotoAbt img {
+            margin-top: 20px;
+            width: 90%;
+      }
+
+      .myProject {
+            width: 100%;
+      }
+
+      .project-row {
+            gap: 10px;
+            width: 100%;
+      }
+
+      .card {
+            width: 45%;
+      }
+
+      footer {
+            margin-bottom: 30px;
+      }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="assets/img/Profile.ico">
+  <title>Portofolio | Jon Warnek Gultom</title>
+</head>
+
+<body>
+  <!-- header -->
+
+  <header>
+    <nav>
+      <div class="logo" onclick="reloadpage()">JW-GULTOM</div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#clients">Client</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <button class="btn-contact" onclick="contact()">Contact</button>
+    </nav>
+  </header>
+
+  <!-- kelas kontent utama -->
+
+  <div class="content" id="home">
+    <div class="foto">
+      <img src="assets/img/profile4.jpg" alt="" />
+    </div>
+    <div class="intro">
+      <h1 class="hello">Hello,</h1>
+      <h3 class="name">Nama saya Jon Warnek Gultom</h3>
+      <h1>Junior Front-End Web Developer</h1>
+      <p>
+        Saya Sekarang berusia 21 tahun dan seorang <i>fresh graduate</i> dari salah satu Universitas swasta di kota
+        Medan,
+        Sumatera Utara.
+        Kegiatan saya saat ini adalah belajar pengembangan web, khususnya Frontend. Teknologi yang saya
+        gunakan saata ini yaitu HTML, CSS
+        , dan bahasa pemrograman JavaScript.
+      </p>
+      <div class="teknologi">
+        <img src="/assets/img/html5-logo-31819.png" alt="">
+      </div>
+      <div class="btnResume">
+        <button type="submit" onclick="window.open('')">Download CV</buttonc>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#000" fill-opacity="1" d="M0,224L1440,160L1440,320L0,320Z"></path>
+  </svg>
+
+  <!-- kelas about -->
+
+  <div class="wrapper" id="about">
+    <div class="about">
+      <div class="abtDesc">
+        <h1>ABOUT ME</h1>
+        <ul>
+          <li>2001 Lahir di Sumatera Utara</li>
+          <li>2012 Lulus SD</li>
+          <li>2015 Lulus SMP</li>
+          <li>2018 Lulus SMA</li>
+          <li>2022 Lulus S1 Sistem Informasi</li>
+          <li>Sekarang Belajar Web Development</li>
+        </ul>
+      </div>
+      <div class="fotoAbt">
+        <img src="assets/img/profile.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- kelas Myproject -->
+
+  <div class="myProject" id="project">
+    <h1>MY PROJECT</h1>
+    <div class="project-row">
+      <div class="card">
+        <img src="assets/img/project1.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>CRUD Dengan HTML, CSS, & JavaScript</p>
+          <button class="btnProject" onclick="project1()">lebih lanjut</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/project2.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>Aplikasi CRUD ReactJs dengan MongoDB</p>
+          <button class="btnProject" onclick="project2()">lebih lanjut</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/project3.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>Jam Digital</p>
+          <button class="btnProject" onclick="project3()">lebih lanjut</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/project4.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>Membuat Navbar Responsive dengan Html, CSS, & JavaScript</p>
+          <button class="btnProject" onclick="project4()">lebih lanjut</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/project5.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>Company Profile dengan HTML, CSS, & JavaScript</p>
+          <button class="btnProject" onclick="project5()">lebih lanjut</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/project6.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>Calculator dengan HTML, CSS, & JavaScript</p>
+          <button class="btnProject" onclick="project6()">lebih lanjut</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/project7.png" alt="Connection Errors" />
+        <div class="middle">
+          <p>Todolist yang sangat sederhana dengan JavaScript</p>
+          <button class="btnProject" onclick="project7()">lebih lanjut</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#000" fill-opacity="1" d="M0,224L1440,128L1440,320L0,320Z">
+    </path>
+  </svg>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <h1>SOSIAL MEDIA</h1>
+    <p>Mari Bekerja sama</p>
+    <div class="sosmed" id="sosmed">
+      <div class="istagram">
+        <span><i class="fab fa-instagram" onclick="redirIg()"></i></span>
+      </div>
+      <div class="whatsapp" onclick="redirWa()">
+        <span><i class="fab fa-whatsapp"></i></i></span>
+      </div>
+      <div class="facebook" onclick="redirFb()">
+        <span><i class="fab fa-facebook"></i></span>
+      </div>
+      <div class="github" onclick="redirGH()">
+        <span><i class="fab fa-github"></i></span>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Dibuat Oleh &copy; jonwarnekgultom@gamil.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
