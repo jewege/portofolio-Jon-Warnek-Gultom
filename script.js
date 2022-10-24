@@ -15,7 +15,7 @@ function redirIg() {
 }
 
 function redirWa() {
-  window.location.href = "https://wa.me/+6282366935302";
+  window.location.href = "https://wa.me/6282366935302";
 }
 
 function redirFb() {
