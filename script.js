@@ -29,6 +29,9 @@ function contact() {
   window.location.href = "mailto:jonwarnekgultom@gmail.com";
 }
 
+function project0() {
+  window.location.href = "https://jewege.github.io/Build-a-Blackjack-Game/";
+}
 function project1() {
   window.location.href = "https://youtu.be/m1EuO-vsivE";
 }
