@@ -1,5 +1,5 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");

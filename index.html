@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="assets/img/Profile.ico">
   <title>Portofolio | Jon Warnek Gultom</title>
@@ -17,18 +18,18 @@
   <header>
     <nav>
       <div class="logo" onclick="reloadpage()">JW-GULTOM</div>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#sosmed ">Sosial Media</a></li>
+        <li><div class="btn-contact"><button onclick="contact()">Contact</button></div></li>
       </ul>
-      <div class="hamburger">
+      <div class="hamburger" id="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <button class="btn-contact" onclick="contact()">Contact</button>
     </nav>
   </header>
 
@@ -54,7 +55,8 @@
         <img src="assets/img/html5-logo-31819.png" alt="">
       </div>
       <div class="btnResume">
-        <button type="submit" onclick="window.open('assets/CV/Jon Warnek Gultom.pdf')">Download CV</buttonc>
+        <button type="submit" onclick="window.open('assets/CV/Jon Warnek Gultom.pdf')">Get My CV 
+          <span class="material-icons"> download </span></buttonc>
       </div>
     </div>
   </div>
@@ -87,7 +89,7 @@
   <!-- kelas Myproject -->
 
   <div class="myProject" id="project">
-    <h1>MY PROJECT</h1>
+    <h1>MY ACTIVITY</h1>
     <div class="project-row">
       <div class="card">
         <img src="assets/img/project0.png" alt="Connection Errors" />
@@ -158,18 +160,10 @@
     <h1>SOSIAL MEDIA</h1>
     <p>Mari Bekerja sama</p>
     <div class="sosmed" id="sosmed">
-      <div class="istagram">
         <span><i class="fab fa-instagram" onclick="redirIg()"></i></span>
-      </div>
-      <div class="whatsapp" onclick="redirWa()">
-        <span><i class="fab fa-whatsapp"></i></i></span>
-      </div>
-      <div class="facebook" onclick="redirFb()">
-        <span><i class="fab fa-facebook"></i></span>
-      </div>
-      <div class="github" onclick="redirGH()">
-        <span><i class="fab fa-github"></i></span>
-      </div>
+        <span><i class="fab fa-whatsapp"  onclick="redirWa()"></i></span>
+        <span><i class="fab fa-facebook"  onclick="redirFb()"></i></span>
+        <span><i class="fab fa-github" onclick="redirGH()"></i></span>
     </div>
     <div class="bottom">
       <p>Dibuat Oleh &copy; jonwarnekgultom@gamil.com</p>
