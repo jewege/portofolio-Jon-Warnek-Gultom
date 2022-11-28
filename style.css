@@ -409,7 +409,7 @@ footer h1, p {
       .nav-menu {
             position: fixed;
             width: 100%;
-            height: 60vh;
+            height: 100vh;
             background: #12151F;
             top: 79px;
             flex-direction: column;
